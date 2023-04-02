@@ -12,7 +12,7 @@ The instructions for this activity are broken into two parts:
 
 ### Create the Earthquake Visualization
 
-Your first task is to visualize an earthquake dataset. Complete the following steps:
+To visualize an earthquake dataset, complete the following steps:
 
   1. Get your dataset. To do so, follow these steps:
 
