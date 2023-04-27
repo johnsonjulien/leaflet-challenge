@@ -15,12 +15,12 @@ d3.json(queryUrl).then(function (data) {
 
   // Create function for depth (deeper = darker color)
     function chooseColor(depth) {
-        if (depth < 10) return "d4c2ef";
-        else if (depth < 25) return "a986ff";
-        else if (depth < 50) return "7e64bf";
-        else if (depth < 75) return "3c08be";
-        else if (depth < 100) return "29067f";
-        else return "1e045f";
+        if (depth < 10) return "#00FF00";
+        else if (depth < 25) return "greenyellow";
+        else if (depth < 50) return "yellow";
+        else if (depth < 75) return "orange";
+        else if (depth < 100) return "orangered";
+        else return "#FF0000";
     }
 
     function createFeatures(earthquakeData) {
@@ -42,6 +42,7 @@ d3.json(queryUrl).then(function (data) {
         radius: markerSize(feature.properties.mag),
         fillColor: chooseColor(feature.geometry.coordinates[2]),
         fillOpacity: 1.0,
+        color: "black",
         stroke: true,
         weight: 0.5
         }
